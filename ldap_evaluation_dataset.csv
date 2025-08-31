@@ -1,0 +1,4116 @@
+"input","output"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": """",
+      ""authentication"": {
+        ""simple"": """"
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": """",
+      ""scope"": 0,
+      ""derefAliases"": 3,
+      ""sizeLimit"": 0,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""present"": ""objectClass""
+      },
+      ""attributes"": [
+        ""subschemaSubentry""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": """",
+      ""attributes"": [
+        {
+          ""type"": ""subschemaSubentry"",
+          ""vals"": [
+            ""cn=Subschema""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 3,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""cn=Subschema"",
+      ""scope"": 0,
+      ""derefAliases"": 3,
+      ""sizeLimit"": 0,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""equalityMatch"": {
+          ""attributeDesc"": ""objectClass"",
+          ""assertionValue"": ""subschema""
+        }
+      },
+      ""attributes"": [
+        ""createTimestamp"",
+        ""modifyTimestamp""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 3,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=Subschema"",
+      ""attributes"": [
+        {
+          ""type"": ""createTimestamp"",
+          ""vals"": [
+            ""20250819184856Z""
+          ]
+        },
+        {
+          ""type"": ""modifyTimestamp"",
+          ""vals"": [
+            ""20250819184856Z""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 3,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 4,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": """",
+      ""scope"": 0,
+      ""derefAliases"": 0,
+      ""sizeLimit"": 0,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""present"": ""objectClass""
+      },
+      ""attributes"": [
+        ""namingContexts"",
+        ""subschemaSubentry"",
+        ""supportedLDAPVersion"",
+        ""supportedSASLMechanisms"",
+        ""supportedExtension"",
+        ""supportedControl"",
+        ""supportedFeatures"",
+        ""vendorName"",
+        ""vendorVersion"",
+        ""+"",
+        ""objectClass""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 4,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": """",
+      ""attributes"": [
+        {
+          ""type"": ""objectClass"",
+          ""vals"": [
+            ""top"",
+            ""OpenLDAProotDSE""
+          ]
+        },
+        {
+          ""type"": ""structuralObjectClass"",
+          ""vals"": [
+            ""OpenLDAProotDSE""
+          ]
+        },
+        {
+          ""type"": ""configContext"",
+          ""vals"": [
+            ""cn=config""
+          ]
+        },
+        {
+          ""type"": ""namingContexts"",
+          ""vals"": [
+            ""dc=uc3m,dc=es""
+          ]
+        },
+        {
+          ""type"": ""supportedControl"",
+          ""vals"": [
+            ""2.16.840.1.113730.3.4.18"",
+            ""2.16.840.1.113730.3.4.2"",
+            ""1.3.6.1.4.1.4203.1.10.1"",
+            ""1.3.6.1.1.22"",
+            ""1.2.840.113556.1.4.319"",
+            ""1.2.826.0.1.3344810.2.3"",
+            ""1.3.6.1.1.13.2"",
+            ""1.3.6.1.1.13.1"",
+            ""1.3.6.1.1.12""
+          ]
+        },
+        {
+          ""type"": ""supportedExtension"",
+          ""vals"": [
+            ""1.3.6.1.4.1.4203.1.11.1"",
+            ""1.3.6.1.4.1.4203.1.11.3"",
+            ""1.3.6.1.1.8"",
+            ""1.3.6.1.1.21.3"",
+            ""1.3.6.1.1.21.1""
+          ]
+        },
+        {
+          ""type"": ""supportedFeatures"",
+          ""vals"": [
+            ""1.3.6.1.1.14"",
+            ""1.3.6.1.4.1.4203.1.5.1"",
+            ""1.3.6.1.4.1.4203.1.5.2"",
+            ""1.3.6.1.4.1.4203.1.5.3"",
+            ""1.3.6.1.4.1.4203.1.5.4"",
+            ""1.3.6.1.4.1.4203.1.5.5""
+          ]
+        },
+        {
+          ""type"": ""supportedLDAPVersion"",
+          ""vals"": [
+            ""3""
+          ]
+        },
+        {
+          ""type"": ""supportedSASLMechanisms"",
+          ""vals"": [
+            ""SCRAM-SHA-512"",
+            ""SCRAM-SHA-384"",
+            ""SCRAM-SHA-256"",
+            ""SCRAM-SHA-224"",
+            ""SCRAM-SHA-1"",
+            ""DIGEST-MD5"",
+            ""NTLM"",
+            ""CRAM-MD5""
+          ]
+        },
+        {
+          ""type"": ""entryDN"",
+          ""vals"": [
+            """"
+          ]
+        },
+        {
+          ""type"": ""subschemaSubentry"",
+          ""vals"": [
+            ""cn=Subschema""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 4,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 5,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": """",
+      ""scope"": 0,
+      ""derefAliases"": 0,
+      ""sizeLimit"": 0,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""present"": ""objectClass""
+      },
+      ""attributes"": [
+        ""*""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 5,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": """",
+      ""attributes"": [
+        {
+          ""type"": ""objectClass"",
+          ""vals"": [
+            ""top"",
+            ""OpenLDAProotDSE""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 5,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 6,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""cn=Subschema"",
+      ""scope"": 0,
+      ""derefAliases"": 3,
+      ""sizeLimit"": 1,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""present"": ""objectClass""
+      },
+      ""attributes"": [
+        ""hasSubordinates"",
+        ""objectClass""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 6,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=Subschema"",
+      ""attributes"": [
+        {
+          ""type"": ""objectClass"",
+          ""vals"": [
+            ""top"",
+            ""subentry"",
+            ""subschema"",
+            ""extensibleObject""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 6,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 7,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""cn=config"",
+      ""scope"": 0,
+      ""derefAliases"": 3,
+      ""sizeLimit"": 1,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""present"": ""objectClass""
+      },
+      ""attributes"": [
+        ""hasSubordinates"",
+        ""objectClass""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 7,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 32,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 8,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""dc=uc3m,dc=es"",
+      ""scope"": 0,
+      ""derefAliases"": 3,
+      ""sizeLimit"": 1,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""present"": ""objectClass""
+      },
+      ""attributes"": [
+        ""hasSubordinates"",
+        ""objectClass""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 8,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""objectClass"",
+          ""vals"": [
+            ""top"",
+            ""dcObject"",
+            ""organization""
+          ]
+        },
+        {
+          ""type"": ""hasSubordinates"",
+          ""vals"": [
+            ""TRUE""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 8,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 9,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""dc=uc3m,dc=es"",
+      ""scope"": 2,
+      ""derefAliases"": 3,
+      ""sizeLimit"": 4,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""equalityMatch"": {
+          ""attributeDesc"": ""objectClass"",
+          ""assertionValue"": ""organizationalUnit""
+        }
+      },
+      ""attributes"": [
+        ""cn"",
+        ""sn"",
+        ""mail"",
+        ""objectClass""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 9,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""ou=Advancement Services,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""objectClass"",
+          ""vals"": [
+            ""top"",
+            ""organizationalUnit""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 9,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""ou=Sociology,ou=Advancement Services,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""objectClass"",
+          ""vals"": [
+            ""top"",
+            ""organizationalUnit""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 9,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""ou=Cashiers Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""objectClass"",
+          ""vals"": [
+            ""top"",
+            ""organizationalUnit""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 9,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""ou=Human Resources,ou=Cashiers Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""objectClass"",
+          ""vals"": [
+            ""top"",
+            ""organizationalUnit""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 9,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 4,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": ""cn=admin,dc=uc3m,dc=es"",
+      ""authentication"": {
+        ""simple"": ""ytrewq""
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""compareRequest"": {
+      ""entry"": ""cn=destinee beckworth,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es"",
+      ""ava"": {
+        ""attributeDesc"": ""mail"",
+        ""assertionValue"": ""radhika.issac@uc3m.es""
+      }
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""compareResponse"": {
+      ""resultCode"": 6,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": ""cn=admin,dc=uc3m,dc=es"",
+      ""authentication"": {
+        ""simple"": ""ytrewq""
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""delRequest"": ""cn=juan lopez,ou=Finance,dc=uc3m,dc=es""
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""delResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": ""cn=admin,dc=uc3m,dc=es"",
+      ""authentication"": {
+        ""simple"": ""ytrewq""
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""delRequest"": ""cn=small research team,ou=Bioengineering,dc=uc3m,dc=es""
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""delResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": """",
+      ""authentication"": {
+        ""simple"": """"
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""extendedReq"": {
+      ""requestName"": ""1.3.6.1.4.1.4203.1.11.3""
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""extendedResp"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """",
+      ""responseValue"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": ""cn=admin,dc=uc3m,dc=es"",
+      ""authentication"": {
+        ""simple"": ""ytrewq""
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""extendedReq"": {
+      ""requestName"": ""1.3.6.1.4.1.4203.1.11.3""
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""extendedResp"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """",
+      ""responseValue"": ""dn:cn=admin,dc=uc3m,dc=es""
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": """",
+      ""authentication"": {
+        ""simple"": """"
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""ou=Finance,dc=uc3m,dc=es"",
+      ""scope"": 2,
+      ""derefAliases"": 0,
+      ""sizeLimit"": 3,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""equalityMatch"": {
+          ""attributeDesc"": ""objectClass"",
+          ""assertionValue"": ""inetOrgPerson""
+        }
+      },
+      ""attributes"": [
+        ""dn"",
+        ""cn"",
+        ""mail""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=ile gardiner,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""aachal.verma@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""ile gardiner""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=janyla kohara,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""dhruv.nair@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""janyla kohara""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=nikosava kircher,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""wakeeta.sandal@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""nikosava kircher""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 4,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": ""cn=admin,dc=uc3m,dc=es"",
+      ""authentication"": {
+        ""simple"": ""ytrewq""
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""compareRequest"": {
+      ""entry"": ""cn=nikosava kircher,ou=Finance,dc=uc3m,dc=es"",
+      ""ava"": {
+        ""attributeDesc"": ""uid"",
+        ""assertionValue"": ""nikosava.kircher""
+      }
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""compareResponse"": {
+      ""resultCode"": 6,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": ""cn=admin,dc=uc3m,dc=es"",
+      ""authentication"": {
+        ""simple"": ""ytrewq""
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""compareRequest"": {
+      ""entry"": ""cn=destinee beckworth,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es"",
+      ""ava"": {
+        ""attributeDesc"": ""mail"",
+        ""assertionValue"": ""radh.issac@uc3m.es""
+      }
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""compareResponse"": {
+      ""resultCode"": 5,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": ""cn=admin,dc=uc3m,dc=es"",
+      ""authentication"": {
+        ""simple"": ""ytrewq""
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""modifyRequest"": {
+      ""object"": ""cn=destinee beckworth,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es"",
+      ""changes"": [
+        {
+          ""operation"": 2,
+          ""modification"": {
+            ""type"": ""title"",
+            ""vals"": [
+              ""Senior Research Officer""
+            ]
+          }
+        }
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""modifyResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": ""cn=admin,dc=uc3m,dc=es"",
+      ""authentication"": {
+        ""simple"": ""ytrewq""
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""modifyRequest"": {
+      ""object"": ""cn=nikosava kircher,ou=Finance,dc=uc3m,dc=es"",
+      ""changes"": [
+        {
+          ""operation"": 2,
+          ""modification"": {
+            ""type"": ""telephoneNumber"",
+            ""vals"": [
+              ""+34-916-24-9999""
+            ]
+          }
+        }
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""modifyResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": ""cn=admin,dc=uc3m,dc=es"",
+      ""authentication"": {
+        ""simple"": ""ytrewq""
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""modifyRequest"": {
+      ""object"": ""cn=janyla kohara,ou=Finance,dc=uc3m,dc=es"",
+      ""changes"": [
+        {
+          ""operation"": 2,
+          ""modification"": {
+            ""type"": ""title"",
+            ""vals"": [
+              ""Senior Developer""
+            ]
+          }
+        }
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""modifyResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": ""cn=admin,dc=uc3m,dc=es"",
+      ""authentication"": {
+        ""simple"": ""ytrewq""
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""modifyRequest"": {
+      ""object"": ""cn=janyla asdasd,ou=Finance,dc=uc3m,dc=es"",
+      ""changes"": [
+        {
+          ""operation"": 1,
+          ""modification"": {
+            ""type"": ""telephoneNumber"",
+            ""vals"": []
+          }
+        }
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""modifyResponse"": {
+      ""resultCode"": 32,
+      ""matchedDN"": ""ou=Finance,dc=uc3m,dc=es"",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": ""cn=admin,dc=uc3m,dc=es"",
+      ""authentication"": {
+        ""simple"": ""ytrewq""
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""addRequest"": {
+      ""entry"": ""cn=juan lopez,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""objectClass"",
+          ""vals"": [
+            ""inetOrgPerson"",
+            ""organizationalPerson"",
+            ""person""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""juan lopez""
+          ]
+        },
+        {
+          ""type"": ""sn"",
+          ""vals"": [
+            ""lopez""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""jlopez""
+          ]
+        },
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""juan.lopez@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""telephoneNumber"",
+          ""vals"": [
+            ""+34-916-24-1234""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Developer""
+          ]
+        },
+        {
+          ""type"": ""departmentNumber"",
+          ""vals"": [
+            ""592""
+          ]
+        },
+        {
+          ""type"": ""userPassword"",
+          ""vals"": [
+            ""{SSHA}fakehash123456==""
+          ]
+        }
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""addResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": ""cn=admin,dc=uc3m,dc=es"",
+      ""authentication"": {
+        ""simple"": ""ytrewq""
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""addRequest"": {
+      ""entry"": ""cn=small research team,ou=Bioengineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""objectClass"",
+          ""vals"": [
+            ""groupOfNames""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""small research team""
+          ]
+        },
+        {
+          ""type"": ""member"",
+          ""vals"": [
+            ""cn=destinee beckworth,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es"",
+            ""cn=janyla kohara,ou=Finance,dc=uc3m,dc=es""
+          ]
+        }
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""addResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": """",
+      ""authentication"": {
+        ""simple"": """"
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""dc=uc3m,dc=es"",
+      ""scope"": 2,
+      ""derefAliases"": 0,
+      ""sizeLimit"": 0,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""substrings"": {
+          ""type"": ""mail"",
+          ""substrings"": [
+            {
+              ""final"": ""@uc3m.es""
+            }
+          ]
+        }
+      },
+      ""attributes"": [
+        ""dn"",
+        ""cn"",
+        ""mail""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=destinee beckworth,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""radhika.issac@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""destinee beckworth""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=layora ramoutar,ou=Center for Computational Science and Engineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""liam.zachariah@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""layora ramoutar""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=ile gardiner,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""aachal.verma@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""ile gardiner""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=sabri furrh,ou=Advancement Services,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""aarnav.deol@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""sabri furrh""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=herra victorica,ou=Equal Opportunity and Discrimination Prevention Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""bhavika.kibe@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""herra victorica""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=ezryn dona,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""chanakya.wali@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""ezryn dona""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=alfanette loggens,ou=Equal Opportunity and Discrimination Prevention Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""anya.pradhan@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""alfanette loggens""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=smallwood bane,ou=Human Resources,ou=Cashiers Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""william.deep@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""smallwood bane""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=nikosava kircher,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""wakeeta.sandal@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""nikosava kircher""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=gracieann reidenbach,ou=Bioengineering,ou=Equal Opportunity and Discrimination Prevention Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""yadavi.raval@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""gracieann reidenbach""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=toshiki gelula,ou=Cashiers Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""balveer.sandal@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""toshiki gelula""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=redouane entrekin,ou=Intercollegiate Athletics,ou=Center for Computational Science and Engineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""samuel.choudhry@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""redouane entrekin""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=urja poladian,ou=Advancement Services,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""luke.lalla@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""urja poladian""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=janyla kohara,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""dhruv.nair@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""janyla kohara""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=aqeeb broglio,ou=Cashiers Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""george.salvi@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""aqeeb broglio""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=ercell grandel,ou=Bioengineering,ou=Equal Opportunity and Discrimination Prevention Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""kashvi.sahni@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""ercell grandel""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=jahnia hauter,ou=Cashiers Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""aryan.comar@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""jahnia hauter""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=aahna houtkooper,ou=Counseling Center,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""dipta.thakur@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""aahna houtkooper""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=sheilla bleeker,ou=Intercollegiate Athletics,ou=Center for Computational Science and Engineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""yahvi.sengupta@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""sheilla bleeker""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=portlynn pevsner,ou=Intercollegiate Athletics,ou=Center for Computational Science and Engineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""yashica.sundaram@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""portlynn pevsner""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": """",
+      ""authentication"": {
+        ""simple"": """"
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""dc=uc3m,dc=es"",
+      ""scope"": 2,
+      ""derefAliases"": 0,
+      ""sizeLimit"": 1,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""and"": [
+          {
+            ""equalityMatch"": {
+              ""attributeDesc"": ""objectClass"",
+              ""assertionValue"": ""groupOfNames""
+            }
+          },
+          {
+            ""equalityMatch"": {
+              ""attributeDesc"": ""member"",
+              ""assertionValue"": ""cn=destinee beckworth,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es""
+            }
+          }
+        ]
+      },
+      ""attributes"": [
+        ""dn"",
+        ""cn""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=accountable talk company,ou=Sociology,ou=Advancement Services,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""accountable talk company""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": """",
+      ""authentication"": {
+        ""simple"": """"
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""dc=uc3m,dc=es"",
+      ""scope"": 2,
+      ""derefAliases"": 0,
+      ""sizeLimit"": 10,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""and"": [
+          {
+            ""equalityMatch"": {
+              ""attributeDesc"": ""objectClass"",
+              ""assertionValue"": ""inetOrgPerson""
+            }
+          },
+          {
+            ""present"": ""telephoneNumber""
+          }
+        ]
+      },
+      ""attributes"": [
+        ""dn"",
+        ""cn"",
+        ""uid""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=destinee beckworth,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""destinee beckworth""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""destinee.beckworth""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=layora ramoutar,ou=Center for Computational Science and Engineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""layora ramoutar""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""layora.ramoutar""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=ile gardiner,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""ile gardiner""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""ile.gardiner""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=sabri furrh,ou=Advancement Services,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""sabri furrh""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""sabri.furrh""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=herra victorica,ou=Equal Opportunity and Discrimination Prevention Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""herra victorica""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""herra.victorica""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=ezryn dona,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""ezryn dona""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""ezryn.dona""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=alfanette loggens,ou=Equal Opportunity and Discrimination Prevention Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""alfanette loggens""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""alfanette.loggens""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=smallwood bane,ou=Human Resources,ou=Cashiers Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""smallwood bane""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""smallwood.bane""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=nikosava kircher,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""nikosava kircher""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""nikosava.kircher""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=gracieann reidenbach,ou=Bioengineering,ou=Equal Opportunity and Discrimination Prevention Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""gracieann reidenbach""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""gracieann.reidenbach""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 4,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": """",
+      ""authentication"": {
+        ""simple"": """"
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""dc=uc3m,dc=es"",
+      ""scope"": 2,
+      ""derefAliases"": 0,
+      ""sizeLimit"": 6,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""and"": [
+          {
+            ""equalityMatch"": {
+              ""attributeDesc"": ""objectClass"",
+              ""assertionValue"": ""inetOrgPerson""
+            }
+          },
+          {
+            ""present"": ""mail""
+          }
+        ]
+      },
+      ""attributes"": [
+        ""dn"",
+        ""cn"",
+        ""uid""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=destinee beckworth,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""destinee beckworth""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""destinee.beckworth""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=layora ramoutar,ou=Center for Computational Science and Engineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""layora ramoutar""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""layora.ramoutar""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=ile gardiner,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""ile gardiner""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""ile.gardiner""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=sabri furrh,ou=Advancement Services,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""sabri furrh""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""sabri.furrh""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=herra victorica,ou=Equal Opportunity and Discrimination Prevention Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""herra victorica""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""herra.victorica""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=ezryn dona,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""ezryn dona""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""ezryn.dona""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 4,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": """",
+      ""authentication"": {
+        ""simple"": """"
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""dc=uc3m,dc=es"",
+      ""scope"": 2,
+      ""derefAliases"": 0,
+      ""sizeLimit"": 0,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""equalityMatch"": {
+          ""attributeDesc"": ""uid"",
+          ""assertionValue"": ""nikosava.kircher""
+        }
+      },
+      ""attributes"": [
+        ""dn""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=nikosava kircher,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": []
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": """",
+      ""authentication"": {
+        ""simple"": """"
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""dc=uc3m,dc=es"",
+      ""scope"": 2,
+      ""derefAliases"": 0,
+      ""sizeLimit"": 6,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""and"": [
+          {
+            ""equalityMatch"": {
+              ""attributeDesc"": ""objectClass"",
+              ""assertionValue"": ""inetOrgPerson""
+            }
+          },
+          {
+            ""present"": ""mail""
+          }
+        ]
+      },
+      ""attributes"": [
+        ""dn"",
+        ""cn"",
+        ""uid""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=destinee beckworth,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""destinee beckworth""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""destinee.beckworth""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=layora ramoutar,ou=Center for Computational Science and Engineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""layora ramoutar""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""layora.ramoutar""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=ile gardiner,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""ile gardiner""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""ile.gardiner""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=sabri furrh,ou=Advancement Services,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""sabri furrh""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""sabri.furrh""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=herra victorica,ou=Equal Opportunity and Discrimination Prevention Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""herra victorica""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""herra.victorica""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=ezryn dona,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""ezryn dona""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""ezryn.dona""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 4,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": """",
+      ""authentication"": {
+        ""simple"": """"
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""dc=uc3m,dc=es"",
+      ""scope"": 2,
+      ""derefAliases"": 0,
+      ""sizeLimit"": 0,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""equalityMatch"": {
+          ""attributeDesc"": ""objectClass"",
+          ""assertionValue"": ""person""
+        }
+      },
+      ""attributes"": [
+        ""dn"",
+        ""cn"",
+        ""title"",
+        ""mail""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=destinee beckworth,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""radhika.issac@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Research officer, trade union""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""destinee beckworth""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=layora ramoutar,ou=Center for Computational Science and Engineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""liam.zachariah@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Sales executive""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""layora ramoutar""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=ile gardiner,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""aachal.verma@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Pharmacologist""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""ile gardiner""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=sabri furrh,ou=Advancement Services,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""aarnav.deol@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Transport planner""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""sabri furrh""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=herra victorica,ou=Equal Opportunity and Discrimination Prevention Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""bhavika.kibe@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Conservation officer, nature""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""herra victorica""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=ezryn dona,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""chanakya.wali@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Recycling officer""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""ezryn dona""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=alfanette loggens,ou=Equal Opportunity and Discrimination Prevention Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""anya.pradhan@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Interpreter""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""alfanette loggens""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=smallwood bane,ou=Human Resources,ou=Cashiers Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""william.deep@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Tourist information centre manager""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""smallwood bane""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=nikosava kircher,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""wakeeta.sandal@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Journalist, broadcasting""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""nikosava kircher""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=gracieann reidenbach,ou=Bioengineering,ou=Equal Opportunity and Discrimination Prevention Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""yadavi.raval@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Press photographer""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""gracieann reidenbach""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=toshiki gelula,ou=Cashiers Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""balveer.sandal@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Horticultural therapist""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""toshiki gelula""
+          ]
+        }
+      ]
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": """",
+      ""authentication"": {
+        ""simple"": """"
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""dc=uc3m,dc=es"",
+      ""scope"": 1,
+      ""derefAliases"": 0,
+      ""sizeLimit"": 5,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""equalityMatch"": {
+          ""attributeDesc"": ""objectClass"",
+          ""assertionValue"": ""organizationalUnit""
+        }
+      },
+      ""attributes"": [
+        ""dn"",
+        ""ou""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""ou"",
+          ""vals"": [
+            ""Finance""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""ou=Bioengineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""ou"",
+          ""vals"": [
+            ""Bioengineering""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""ou=Cashiers Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""ou"",
+          ""vals"": [
+            ""Cashiers Office""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""ou=Advancement Services,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""ou"",
+          ""vals"": [
+            ""Advancement Services""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""ou=Center for Computational Science and Engineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""ou"",
+          ""vals"": [
+            ""Center for Computational Science and Engineering""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 4,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": """",
+      ""authentication"": {
+        ""simple"": """"
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""dc=uc3m,dc=es"",
+      ""scope"": 2,
+      ""derefAliases"": 0,
+      ""sizeLimit"": 5,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""equalityMatch"": {
+          ""attributeDesc"": ""objectClass"",
+          ""assertionValue"": ""inetOrgPerson""
+        }
+      },
+      ""attributes"": [
+        ""dn"",
+        ""cn"",
+        ""sn"",
+        ""uid"",
+        ""mail"",
+        ""telephoneNumber"",
+        ""title"",
+        ""departmentNumber""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=destinee beckworth,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""radhika.issac@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""telephoneNumber"",
+          ""vals"": [
+            ""01640628267""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Research officer, trade union""
+          ]
+        },
+        {
+          ""type"": ""departmentNumber"",
+          ""vals"": [
+            ""592""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""destinee beckworth""
+          ]
+        },
+        {
+          ""type"": ""sn"",
+          ""vals"": [
+            ""beckworth""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""destinee.beckworth""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=layora ramoutar,ou=Center for Computational Science and Engineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""liam.zachariah@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""telephoneNumber"",
+          ""vals"": [
+            ""08095029331""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Sales executive""
+          ]
+        },
+        {
+          ""type"": ""departmentNumber"",
+          ""vals"": [
+            ""748""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""layora ramoutar""
+          ]
+        },
+        {
+          ""type"": ""sn"",
+          ""vals"": [
+            ""ramoutar""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""layora.ramoutar""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=ile gardiner,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""aachal.verma@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""telephoneNumber"",
+          ""vals"": [
+            ""+918895812791""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Pharmacologist""
+          ]
+        },
+        {
+          ""type"": ""departmentNumber"",
+          ""vals"": [
+            ""834""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""ile gardiner""
+          ]
+        },
+        {
+          ""type"": ""sn"",
+          ""vals"": [
+            ""gardiner""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""ile.gardiner""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=sabri furrh,ou=Advancement Services,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""aarnav.deol@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""telephoneNumber"",
+          ""vals"": [
+            ""0704083751""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Transport planner""
+          ]
+        },
+        {
+          ""type"": ""departmentNumber"",
+          ""vals"": [
+            ""453""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""sabri furrh""
+          ]
+        },
+        {
+          ""type"": ""sn"",
+          ""vals"": [
+            ""furrh""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""sabri.furrh""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=herra victorica,ou=Equal Opportunity and Discrimination Prevention Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""bhavika.kibe@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""telephoneNumber"",
+          ""vals"": [
+            ""+919213149550""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Conservation officer, nature""
+          ]
+        },
+        {
+          ""type"": ""departmentNumber"",
+          ""vals"": [
+            ""426""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""herra victorica""
+          ]
+        },
+        {
+          ""type"": ""sn"",
+          ""vals"": [
+            ""victorica""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""herra.victorica""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 4,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": """",
+      ""authentication"": {
+        ""simple"": """"
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""dc=uc3m,dc=es"",
+      ""scope"": 2,
+      ""derefAliases"": 0,
+      ""sizeLimit"": 2,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""substrings"": {
+          ""type"": ""mail"",
+          ""substrings"": [
+            {
+              ""final"": ""@uc3m.es""
+            }
+          ]
+        }
+      },
+      ""attributes"": [
+        ""dn"",
+        ""cn"",
+        ""uid"",
+        ""mail""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=destinee beckworth,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""radhika.issac@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""destinee beckworth""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""destinee.beckworth""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=layora ramoutar,ou=Center for Computational Science and Engineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""liam.zachariah@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""layora ramoutar""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""layora.ramoutar""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 4,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": """",
+      ""authentication"": {
+        ""simple"": """"
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""dc=uc3m,dc=es"",
+      ""scope"": 2,
+      ""derefAliases"": 0,
+      ""sizeLimit"": 0,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""and"": [
+          {
+            ""equalityMatch"": {
+              ""attributeDesc"": ""objectClass"",
+              ""assertionValue"": ""inetOrgPerson""
+            }
+          },
+          {
+            ""substrings"": {
+              ""type"": ""title"",
+              ""substrings"": [
+                {
+                  ""any"": ""Research""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      ""attributes"": [
+        ""dn"",
+        ""cn"",
+        ""title"",
+        ""mail""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=destinee beckworth,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""radhika.issac@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Research officer, trade union""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""destinee beckworth""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=portlynn pevsner,ou=Intercollegiate Athletics,ou=Center for Computational Science and Engineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""mail"",
+          ""vals"": [
+            ""yashica.sundaram@uc3m.es""
+          ]
+        },
+        {
+          ""type"": ""title"",
+          ""vals"": [
+            ""Research officer, political party""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""portlynn pevsner""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": """",
+      ""authentication"": {
+        ""simple"": """"
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""dc=uc3m,dc=es"",
+      ""scope"": 2,
+      ""derefAliases"": 0,
+      ""sizeLimit"": 6,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""and"": [
+          {
+            ""equalityMatch"": {
+              ""attributeDesc"": ""objectClass"",
+              ""assertionValue"": ""inetOrgPerson""
+            }
+          },
+          {
+            ""substrings"": {
+              ""type"": ""departmentNumber"",
+              ""substrings"": [
+                {
+                  ""any"": ""2""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      ""attributes"": [
+        ""dn"",
+        ""cn"",
+        ""uid"",
+        ""departmentNumber""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=destinee beckworth,ou=Equal Opportunity and Discrimination Prevention Office,ou=Bioengineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""departmentNumber"",
+          ""vals"": [
+            ""592""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""destinee beckworth""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""destinee.beckworth""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=herra victorica,ou=Equal Opportunity and Discrimination Prevention Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""departmentNumber"",
+          ""vals"": [
+            ""426""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""herra victorica""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""herra.victorica""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=smallwood bane,ou=Human Resources,ou=Cashiers Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""departmentNumber"",
+          ""vals"": [
+            ""632""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""smallwood bane""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""smallwood.bane""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=gracieann reidenbach,ou=Bioengineering,ou=Equal Opportunity and Discrimination Prevention Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""departmentNumber"",
+          ""vals"": [
+            ""821""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""gracieann reidenbach""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""gracieann.reidenbach""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=janyla kohara,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""departmentNumber"",
+          ""vals"": [
+            ""129""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""janyla kohara""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""janyla.kohara""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=ercell grandel,ou=Bioengineering,ou=Equal Opportunity and Discrimination Prevention Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""departmentNumber"",
+          ""vals"": [
+            ""826""
+          ]
+        },
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""ercell grandel""
+          ]
+        },
+        {
+          ""type"": ""uid"",
+          ""vals"": [
+            ""ercell.grandel""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": """",
+      ""authentication"": {
+        ""simple"": """"
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""dc=uc3m,dc=es"",
+      ""scope"": 2,
+      ""derefAliases"": 0,
+      ""sizeLimit"": 3,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""equalityMatch"": {
+          ""attributeDesc"": ""objectClass"",
+          ""assertionValue"": ""groupOfNames""
+        }
+      },
+      ""attributes"": [
+        ""dn"",
+        ""cn""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=accountable talk company,ou=Sociology,ou=Advancement Services,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""accountable talk company""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=convergence sphere,ou=Sociology,ou=Advancement Services,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""convergence sphere""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=datafication association,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""datafication association""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 4,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindRequest"": {
+      ""version"": 3,
+      ""name"": """",
+      ""authentication"": {
+        ""simple"": """"
+      }
+    }
+  }
+}","{
+  ""messageID"": 1,
+  ""protocolOp"": {
+    ""bindResponse"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
+"{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchRequest"": {
+      ""baseObject"": ""dc=uc3m,dc=es"",
+      ""scope"": 2,
+      ""derefAliases"": 0,
+      ""sizeLimit"": 5,
+      ""timeLimit"": 0,
+      ""typesOnly"": false,
+      ""filter"": {
+        ""and"": [
+          {
+            ""equalityMatch"": {
+              ""attributeDesc"": ""objectClass"",
+              ""assertionValue"": ""groupOfNames""
+            }
+          },
+          {
+            ""substrings"": {
+              ""type"": ""cn"",
+              ""substrings"": [
+                {
+                  ""any"": ""o""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      ""attributes"": [
+        ""dn"",
+        ""cn""
+      ]
+    }
+  }
+}","{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=accountable talk company,ou=Sociology,ou=Advancement Services,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""accountable talk company""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=convergence sphere,ou=Sociology,ou=Advancement Services,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""convergence sphere""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=datafication association,ou=Finance,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""datafication association""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=new normal conglomerate,ou=Cashiers Office,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""new normal conglomerate""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResEntry"": {
+      ""objectName"": ""cn=proactive association,ou=Intercollegiate Athletics,ou=Center for Computational Science and Engineering,dc=uc3m,dc=es"",
+      ""attributes"": [
+        {
+          ""type"": ""cn"",
+          ""vals"": [
+            ""proactive association""
+          ]
+        }
+      ]
+    }
+  }
+}
+{
+  ""messageID"": 2,
+  ""protocolOp"": {
+    ""searchResDone"": {
+      ""resultCode"": 0,
+      ""matchedDN"": """",
+      ""diagnosticMessage"": """"
+    }
+  }
+}"
